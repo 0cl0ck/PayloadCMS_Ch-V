@@ -1,0 +1,118 @@
+chanvre-vert/
+├── components.json
+├── docker-compose.yml
+├── Dockerfile
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── PRD.md
+├── public/
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── media/
+│   └── website-template-OG.webp
+├── README.md
+├── redirects.js
+├── src/
+│   ├── access/
+│   │   ├── anyone.ts
+│   │   ├── authenticated.ts
+│   │   └── authenticatedOrPublished.ts
+│   ├── app/
+│   │   ├── (frontend)/
+│   │   └── (payload)/
+│   ├── blocks/
+│   │   ├── ArchiveBlock/
+│   │   ├── Banner/
+│   │   ├── CallToAction/
+│   │   ├── Code/
+│   │   ├── Content/
+│   │   ├── Form/
+│   │   ├── MediaBlock/
+│   │   ├── RelatedPosts/
+│   │   └── RenderBlocks.tsx
+│   ├── collections/
+│   │   ├── Categories.ts
+│   │   ├── Media.ts
+│   │   ├── Pages/
+│   │   ├── Posts/
+│   │   └── Users/
+│   ├── components/
+│   │   ├── AdminBar/
+│   │   ├── BeforeDashboard/
+│   │   ├── BeforeLogin/
+│   │   ├── Card/
+│   │   ├── CollectionArchive/
+│   │   ├── Link/
+│   │   ├── LivePreviewListener/
+│   │   ├── Logo/
+│   │   ├── Media/
+│   │   ├── PageRange/
+│   │   ├── Pagination/
+│   │   ├── PayloadRedirects/
+│   │   ├── RichText/
+│   │   └── ui/
+│   ├── cssVariables.js
+│   ├── endpoints/
+│   │   ├── seed/
+│   │   └── seedHandler.ts
+│   ├── environment.d.ts
+│   ├── fields/
+│   │   ├── defaultLexical.ts
+│   │   ├── link.ts
+│   │   ├── linkGroup.ts
+│   │   └── slug/
+│   ├── Footer/
+│   │   ├── Component.tsx
+│   │   ├── config.ts
+│   │   └── hooks/
+│   ├── Header/
+│   │   ├── Component.client.tsx
+│   │   ├── Component.tsx
+│   │   ├── config.ts
+│   │   ├── hooks/
+│   │   └── Nav/
+│   ├── heros/
+│   │   ├── config.ts
+│   │   ├── HighImpact/
+│   │   ├── LowImpact/
+│   │   ├── MediumImpact/
+│   │   ├── PostHero/
+│   │   └── RenderHero.tsx
+│   ├── hooks/
+│   │   ├── formatSlug.ts
+│   │   ├── populatePublishedAt.ts
+│   │   └── revalidateRedirects.ts
+│   ├── payload-types.ts
+│   ├── payload.config.ts
+│   ├── plugins/
+│   │   └── index.ts
+│   ├── providers/
+│   │   ├── HeaderTheme/
+│   │   ├── index.tsx
+│   │   └── Theme/
+│   ├── search/
+│   │   ├── beforeSync.ts
+│   │   ├── Component.tsx
+│   │   └── fieldOverrides.ts
+│   └── utilities/
+│       ├── canUseDOM.ts
+│       ├── cn.ts
+│       ├── deepMerge.ts
+│       ├── formatDateTime.ts
+│       ├── generateMeta.ts
+│       ├── generatePreviewPath.ts
+│       ├── getDocument.ts
+│       ├── getGlobals.ts
+│       ├── getMeUser.ts
+│       ├── getRedirects.ts
+│       ├── getURL.ts
+│       ├── mergeOpenGraph.ts
+│       ├── toKebabCase.ts
+│       ├── useClickableCard.ts
+│       └── useDebounce.ts
+├── structure.txt
+├── tailwind.config.mjs
+└── tsconfig.json
