@@ -1,3 +1,4 @@
+The technologies used in this project are:
 {
   "technologies": {
     "frontend": {
@@ -55,3 +56,5 @@
     }
   }
 }
+
+Use Typescript to write the code.
