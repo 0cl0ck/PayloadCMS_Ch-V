@@ -79,7 +79,9 @@ async function getCategoryProducts(categoryId: string) {
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
-  const category = await getCategory(params.slug)
+  const { slug } = await params
+
+  const category = await getCategory(slug)
 
   if (!category) {
     notFound()
