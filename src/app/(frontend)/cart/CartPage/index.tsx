@@ -1,16 +1,16 @@
-import React from 'react';
-import CartItem from '../CartItem';
-import { Button } from '@/components/ui/button';
+import React from 'react'
+import CartItem from '../CartItem'
+import { Button } from '@/components/ui/button'
 
 interface CartPageProps {
   items: {
-    id: string;
-    name: string;
-    price: number;
-    quantity: number;
-  }[];
-  onRemoveItem: (id: string) => void;
-  onQuantityChange: (id: string, quantity: number) => void;
+    id: string
+    name: string
+    price: number
+    quantity: number
+  }[]
+  onRemoveItem: (id: string) => void
+  onQuantityChange: (id: string, quantity: number) => void
 }
 
 const CartPage: React.FC<CartPageProps> = ({ items, onRemoveItem, onQuantityChange }) => {
@@ -32,12 +32,12 @@ const CartPage: React.FC<CartPageProps> = ({ items, onRemoveItem, onQuantityChan
             />
           ))}
           <div className="flex justify-end mt-4">
-            <Button variant="primary">Checkout</Button>
+            <Button variant="default">Checkout</Button>
           </div>
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default CartPage;
+export default CartPage

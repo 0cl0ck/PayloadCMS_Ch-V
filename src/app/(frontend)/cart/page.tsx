@@ -1,9 +1,16 @@
-import React, { useContext } from 'react';
-import CartPage from './CartPage';
-import { CartContext } from '@/state/cartContext';
+'use client'
+import React, { useContext } from 'react'
+import CartPage from './CartPage'
+import { CartContext } from '@/state/cartContext'
 
 const Cart = () => {
-  const { cartItems, removeFromCart, updateCartItemQuantity } = useContext(CartContext);
+  const cartContext = useContext(CartContext)
+
+  if (!cartContext) {
+    return <div>Loading...</div>
+  }
+
+  const { cartItems, removeFromCart, updateCartItemQuantity } = cartContext
 
   return (
     <CartPage
@@ -11,7 +18,7 @@ const Cart = () => {
       onRemoveItem={removeFromCart}
       onQuantityChange={updateCartItemQuantity}
     />
-  );
-};
+  )
+}
 
-export default Cart;
+export default Cart
